@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center; 
     align-items: center;
-    background-color: pink;
+    background-color: #a1a4a6;
 }
 
 input.ng-invalid.ng-touched , input.ng-invalid.ng-dirty{

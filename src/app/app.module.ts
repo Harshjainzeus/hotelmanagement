@@ -5,18 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import {ReactiveFormsModule} from '@angular/forms';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import {MainpageModule} from './mainpage/mainpage.module';
+// import { SidenavComponent } from './sidenav/sidenav.component';
+// import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    DashboardComponent
+    // SidenavComponent,
+    // DashboardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    MainpageModule
   ],
   providers: [],
   bootstrap: [AppComponent]

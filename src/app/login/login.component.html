@@ -1,5 +1,5 @@
-<div class="container-fluid m-0 p-0 wrapper">
-    <div class="card mx-auto text-center shadow" style="width:40%;">
+<div class="container-fluid m-0 wrapper ">
+    <div class="card mx-auto text-center shadow " style="min-width: 500px;">
         <div class="card-header">
             <div class="card-title mx-auto" style="font-weight: 500; font-size: 30px;">
                 Hotel Reservation System
@@ -24,7 +24,7 @@
                       <input type="password" class="form-control " placeholder="Enter password" formControlName="password" >
                       <!-- <span *ngIf="password.touched">enter it babe</span> -->
                     </div>
-                    <button type="submit" class="btn btn-lg btn-secondary " [disabled]="!loginuser.valid" routerLink="/dashboard">Sign Me In</button>
+                    <button type="submit" class="btn btn-lg btn-secondary " [disabled]="!loginuser.valid" routerLink="/mainpage/dashboard">Sign Me In</button>
                     <!-- <a href="dashboard.html" class="btn btn-primary">Disabled Link</a> -->
                  </form>
             </div>
