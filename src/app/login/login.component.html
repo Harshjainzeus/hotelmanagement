@@ -1,0 +1,41 @@
+<div class="container-fluid m-0 p-0 wrapper">
+    <div class="card mx-auto text-center shadow" style="width:40%;">
+        <div class="card-header">
+            <div class="card-title mx-auto" style="font-weight: 500; font-size: 30px;">
+                Hotel Reservation System
+            </div>
+        </div>
+        <div class="container-fluid" style="height: 10vh;"></div>
+        <div class="card-body">
+            <div class="container-fluid my-4">
+             <button class="btn btn-secondary btn-block"> Google sign-in</button>
+            </div>
+            <div class="container"> OR </div>
+            
+            <div class="container-fluid mt-4">
+                <form [formGroup]="loginuser" (ngSubmit)="submitfunction()">
+                    <div class="form-group">
+                      <input type="email" class="form-control"  placeholder="Enter email" formControlName="email" >
+                      <!-- <span *ngIf=em.touched>Email is Invalid</span> -->
+                      <div *ngIf="loginuser.controls.email.invalid && (loginuser.controls.email.touched||loginuser.controls.email.dirty)" class="inval">Email is invalid</div>
+     
+                    </div>
+                    <div class="form-group">
+                      <input type="password" class="form-control " placeholder="Enter password" formControlName="password" >
+                      <!-- <span *ngIf="password.touched">enter it babe</span> -->
+                    </div>
+                    <button type="submit" class="btn btn-lg btn-secondary " [disabled]="!loginuser.valid" routerLink="/dashboard">Sign Me In</button>
+                    <!-- <a href="dashboard.html" class="btn btn-primary">Disabled Link</a> -->
+                 </form>
+            </div>
+        </div>
+        <div class="card-footer">
+            <div class="row">
+                <div class="col-sm-6"> <a class="btn btn-outline-secondary"> Register </a></div>
+                <div class="col-sm-6"> <a class="btn btn-outline-secondary"> Forgot password </a></div>
+             
+            </div>
+        </div>
+
+    </div>
+</div>
